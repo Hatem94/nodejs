@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "hatemerrougui/my-node-app"
+        IMAGE_NAME = "hatem14/my-node-app"
         KUBE_CONFIG = credentials('kubeconfig') // Stocké dans Jenkins credentials
     }
 
     stages {
         stage('Cloner le Repo') {
             steps {
-                git 'https://github.com/hatemerrougui/docker-k8s-app.git'
+                git 'https://github.com/Hatem94/nodejs.git'
             }
         }
 
