@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "hatem14/my-node-app"
+        IMAGE_NAME = "hatem14/node.js"
         KUBE_CONFIG = credentials('kubeconfig') // Stocké dans Jenkins credentials
     }
 
